@@ -40,21 +40,13 @@
 			selectFilter:            $("select")
 		};
 
-	/**
-	 * @desc Check the element was been scrolled into the view
-	 * @param {object} elem - jQuery object
-	 * @return {boolean}
-	 */
+	
 	function isScrolledIntoView ( elem ) {
 		if ( isNoviBuilder ) return true;
 		return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
 	}
 
-	/**
-	 * @desc Calls a function when element has been scrolled into the view
-	 * @param {object} element - jQuery object
-	 * @param {function} func - init function
-	 */
+	
 	function lazyInit( element, func ) {
 		var scrollHandler = function () {
 			if ( ( !element.hasClass( 'lazy-loaded' ) && ( isScrolledIntoView( element ) ) ) ) {
@@ -150,10 +142,7 @@
 	$(function () {
 		isNoviBuilder = window.xMode;
 
-		/**
-		 * @desc Initialize owl carousel plugin
-		 * @param {object} carousel - carousel jQuery object
-		 */
+		
 		function initOwlCarousel ( carousel ) {
 			var
 				aliaces = [ '-', '-sm-', '-md-', '-lg-', '-xl-', '-xxl-' ],
@@ -223,10 +212,7 @@
 			} );
 		}
 
-		/**
-		 * @desc Create live search results
-		 * @param {object} options
-		 */
+		
 		function liveSearch(options) {
 			$('#' + options.live).removeClass('cleared').html();
 			options.current++;
