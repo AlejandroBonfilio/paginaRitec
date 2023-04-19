@@ -5,6 +5,13 @@
 /*
 * Contexts
 */
+
+*{
+	text-decoration: none;
+}
+
+
+
 .context-dark, .bg-gray-700, .bg-gray-primary, .bg-gray, .bg-gray-primary-light, .bg-primary,
 .context-dark h1,
 .bg-gray-700 h1,
