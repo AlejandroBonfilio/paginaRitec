@@ -8883,4 +8883,42 @@ html.rd-navbar-fixed-linked .page {
   }
 
 
-  
+  .clientes-background{
+	background-color: #0e471241;
+	border-radius: 10px;
+	
+  }
+
+  .accordion-body ul li {
+	padding: 10px;
+  }
+
+  .acordeondeclientes{
+	margin: 5%;
+	
+
+  }
+
+
+  .imagenes-marcas{
+	margin: 10px;
+	
+  }
+
+  .imagenes-marcas:hover{
+	margin: 10px;
+	
+	transform: scale(2);
+  }
+
+  .links-utiles{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .linkutiles-titulos{
+	background-color: #0e4712ad;
+	text-align: center;
+	color: white;
+  }
